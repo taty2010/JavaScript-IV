@@ -16,3 +16,18 @@
          console.log(`Hello my name is ${fred.name}, I am from ${fred.location}`);
      }
  }
+
+ class Instructor extends Person{
+     constructor(teach){
+        super(teach);
+        this.specialty = 'redux';
+        this.favLanguage = 'JavaScript',
+        this.catchPhrase = 'Don\'t forget the homies';
+     }
+     demo(subject){
+         console.log('Today we are learning about ${subject}');
+     }
+     grade(student){
+        console.log('${student.name} recieves a perfect score on ${subject}')
+     }
+ }
